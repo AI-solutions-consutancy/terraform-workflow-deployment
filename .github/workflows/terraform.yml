@@ -7,7 +7,7 @@ on:
       - release/*
   workflow_dispatch: null
 jobs:
-  Build and Deploy:
+  Build:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
