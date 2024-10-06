@@ -23,6 +23,6 @@ jobs:
       - name: Terraform Init
         id: init
         run: terraform init
-          -backend-config="storage_account_name=${{  var.STORAGE_ACCOUNT }}"
-          -backend-config="container_name=${{ var.CONTAINER_NAME }}"
-          -backend-config="resource_group_name=${{ var.RESOURCE_GROUP }}"
+          -backend-config="storage_account_name=${{  vars.STORAGE_ACCOUNT }}"
+          -backend-config="container_name=${{ vars.CONTAINER_NAME }}"
+          -backend-config="resource_group_name=${{ vars.RESOURCE_GROUP }}"
