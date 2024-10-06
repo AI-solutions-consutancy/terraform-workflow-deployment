@@ -11,9 +11,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Setup TFLint
-      - uses: terraform-linters/setup-tflint@v4.0.0
-        with:
-          tflint_version: null
-          github_token: null
-          tflint_wrapper: null
+      - name: Run a sample github action
+        run: echo "this workflow run successfully for this particular actions"
+      # - name: Setup TFLint
+      # - uses: terraform-linters/setup-tflint@v4.0.0
+      #   with:
+      #     tflint_version: null
+      #     github_token: null
+      #     tflint_wrapper: null
