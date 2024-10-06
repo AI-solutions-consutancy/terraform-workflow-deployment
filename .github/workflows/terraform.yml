@@ -1,23 +1,19 @@
+---
 name: Terraform Deployments Azure
 on:
   push:
     branches:
-    - main
-    - release/*
-  workflow_dispatch: 
-
+      - main
+      - release/*
+  workflow_dispatch: null
 jobs:
   Build and Deploy:
-  
     runs-on: ubuntu-latest
-
     steps:
-     - uses: actions/checkout@v4
-      
-     - name: Setup TFLint
-     - uses: terraform-linters/setup-tflint@v4.0.0
-       with: 
-         tflint_version: # optional, default is latest
-         github_token: # optional, default is ${{ github.server_url == 'https://github.com' && github.token || '' }}
-         tflint_wrapper: # optional, default is false
-          
+      - uses: actions/checkout@v4
+      - name: Setup TFLint
+      - uses: terraform-linters/setup-tflint@v4.0.0
+        with:
+          tflint_version: null
+          github_token: null
+          tflint_wrapper: null
