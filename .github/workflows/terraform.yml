@@ -13,11 +13,8 @@ jobs:
       - uses: actions/checkout@v4
         name: Checkout source code
         
-      - name: Run a sample github action
-        run: echo "this workflow run successfully for this particular actions"
-        
-      - name: Setup TFLint
-      - uses: terraform-linters/setup-tflint@v4
+      - uses: azure/login@v2
+        name: azure login
         with:
-          github_token: ${{ secrets.MY_CUSTOM_GITHUB_TOKEN }}
-  
+          creds: ${{ secrets.AZURE_CREDENTIALS }}
+        
