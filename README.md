@@ -8,3 +8,6 @@
       "subscriptionId": "<Subscription ID>",
       "tenantId": "<Tenant ID>"
   }
+
+[terraform] (https://www.veeam.com/blog/azure-terraform-github-actions-deployment.html)
+[yaml-lint] (https://www.yamllint.com/)
