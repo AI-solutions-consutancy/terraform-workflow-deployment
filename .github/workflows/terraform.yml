@@ -8,6 +8,8 @@ on:
   workflow_dispatch: null
 jobs:
   Build:
+    name: "Terraform Dev"
+    environment: dev
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
@@ -34,11 +36,11 @@ jobs:
 
       - name: Terraform Validate
         id: validate
-        run: terraform validate -no-color 
+        run: terraform validate  
 
-      # - name: Terraform Plan
-      #   id: plan
-      #   run: terraform plan -no-color   
+      - name: Terraform Plan
+        id: plan
+        run: terraform plan  
 
-      # - name: Terraform Apply
-      #   run: terraform apply -auto-approve  
+      - name: Terraform Apply
+        run: terraform apply -auto-approve  
