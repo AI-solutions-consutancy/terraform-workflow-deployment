@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform/environments/backend.tf
+        working-directory: ./terraform/environments/dev/backend.tf
     steps:
       - uses: actions/checkout@v4
         name: Checkout source code
