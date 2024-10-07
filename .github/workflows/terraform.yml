@@ -5,12 +5,17 @@ on:
     branches:
       - main
       - release/*
-  workflow_dispatch: null
+  workflow_dispatch: 
+  
 jobs:
   Build:
     name: "Terraform Dev"
     environment: dev
     runs-on: ubuntu-latest
+    defaults:
+      run:
+        shell: bash
+        working-directory: ./terraform
     steps:
       - uses: actions/checkout@v4
         name: Checkout source code
@@ -40,9 +45,9 @@ jobs:
         id: validate
         run: terraform validate  
 
-      - name: Terraform Plan
-        id: plan
-        run: terraform plan  -input=false
+      # - name: Terraform Plan
+      #   id: plan
+      #   run: terraform plan  -input=false
 
-      - name: Terraform Apply
-        run: terraform apply -auto-approve  -input=false
+      # - name: Terraform Apply
+      #   run: terraform apply -auto-approve  -input=false
