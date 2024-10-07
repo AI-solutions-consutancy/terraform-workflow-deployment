@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: ./terraform
+        working-directory: ./terraform/modules
     steps:
       - uses: actions/checkout@v4
         name: Checkout source code
@@ -27,8 +27,7 @@ jobs:
         uses: hashicorp/setup-terraform@v3
         with:
           terraform_version: 1.6.6
-          working_directory: .
-
+    
         
       - name: Terraform Init
         id: init
