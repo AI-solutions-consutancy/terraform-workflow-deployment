@@ -6,6 +6,7 @@ terraform {
       source  = "hashicorp/azurerm"
       version = "= v4.4.0"
     }
+      features {}
     azuread = {
       source = "hashicorp/azuread"
       version = ">= 2.3.0"
@@ -19,9 +20,4 @@ terraform {
     container_name       = "tfstate"
     key                  = "terraform-dev.tfstate"
   }
-}
-
-
-provider "azurerm" {
-  features {}
 }
