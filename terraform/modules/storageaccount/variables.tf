@@ -17,3 +17,6 @@ variable "storage_account_tier" {
 variable "location" {
   type = string
 } 
+
+variable "container_name" {
+  type = string
