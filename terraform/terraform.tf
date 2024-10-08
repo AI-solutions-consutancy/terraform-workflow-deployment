@@ -1,8 +1,8 @@
 terraform {
   required_providers {
     azurerm = {
-      source  = "hashicorp/azurerm"
-      version = "3.107.0"
+    source  = "hashicorp/azurerm"
+    version = "3.107.0"
     }
   }
 
@@ -14,6 +14,7 @@ terraform {
     key                  = "terraform-dev.tfstate"
   }
 }
+
 provider "azurerm" {
   features {}
 }
