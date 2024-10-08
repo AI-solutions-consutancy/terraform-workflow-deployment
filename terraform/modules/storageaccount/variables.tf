@@ -18,5 +18,3 @@ variable "location" {
   type = string
 } 
 
-variable "container_name" {
-  type = string

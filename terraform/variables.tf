@@ -17,3 +17,8 @@ variable "storage_account_replication_type" {
   type    = string
   default = "GRS"
 }
+
+variable "container_name" {
+  type = string
+  default = "country"
+}

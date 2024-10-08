@@ -7,3 +7,9 @@ module "storageaccount" {
   storage_account_replication_type = var.storage_account_replication_type
 }
   
+resource "azurerm_storage_container" "stg_container" {
+  depends_on = [ module.storageaccount ]
+  name                  = var.container_name
+  storage_account_name  = module.storageaccount.name
+  container_access_type = "private"
+}  
