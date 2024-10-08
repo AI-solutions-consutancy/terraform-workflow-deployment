@@ -18,3 +18,10 @@ variable "location" {
   type = string
 } 
 
+variable "managed_identity_type" {
+  description = "The type of Managed Identity which should be assigned to the Linux Virtual Machine. Possible values are `SystemAssigned`, `UserAssigned` and `SystemAssigned, UserAssigned`"
+  default     = "SystemAssigned"
+  type        = string
+}
+
+

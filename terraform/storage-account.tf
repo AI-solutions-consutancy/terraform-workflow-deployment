@@ -5,6 +5,7 @@ module "storageaccount" {
   location                         = var.location
   storage_account_tier             = var.storage_account_tier
   storage_account_replication_type = var.storage_account_replication_type
+    
 }
   
 resource "azurerm_storage_container" "stg_container" {
@@ -12,4 +13,5 @@ resource "azurerm_storage_container" "stg_container" {
   name                  = var.container_name
   storage_account_name  = module.storageaccount.name
   container_access_type = "private"
+   
 }  
