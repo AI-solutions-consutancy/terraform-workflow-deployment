@@ -48,7 +48,7 @@ jobs:
         id: plan
         run: |
           terraform plan  -input=false
-          working-directory: ./terraform/variables
+          working-directory: ./terraform/modules
           # terraform-variables-path: variables/dev.tfvars
 
       # - name: Terraform Apply
