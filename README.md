@@ -11,4 +11,4 @@
 
 ### [terraform] (https://www.veeam.com/blog/azure-terraform-github-actions-deployment.html)
 ### [yaml-lint] (https://www.yamllint.com/)
-###[terraform-sp] (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)
+### [terraform-sp] (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)
