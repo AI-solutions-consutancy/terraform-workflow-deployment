@@ -7,3 +7,13 @@ variable "location" {
   type    = string
   default = "uksouth"
 }
+
+variable "storage_account_tier" {
+  type    = string
+  default = "Standard"
+}
+
+variable "storage_account_replication_type" {
+  type    = string
+  default = "GRS"
+}
