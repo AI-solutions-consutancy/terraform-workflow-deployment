@@ -1,10 +1,9 @@
 variable "name" {
-    type = string  
+  type = string  
 }
 
 variable "resource_group_name" {
-    type = string
-  
+  type = string 
 }
  
 variable "storage_account_replication_type" {
@@ -16,6 +15,5 @@ variable "storage_account_tier" {
 }
 
 variable "location" {
-    type = string
-  
-}
+  type = string
+} 
