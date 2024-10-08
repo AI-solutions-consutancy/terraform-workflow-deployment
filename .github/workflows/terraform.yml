@@ -15,7 +15,7 @@ jobs:
     defaults:
       run:
         shell: bash
-        working-directory: .
+        working-directory: ./
     steps:
       - uses: actions/checkout@v4
         name: Checkout source code
