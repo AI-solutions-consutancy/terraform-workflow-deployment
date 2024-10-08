@@ -1,9 +1,9 @@
 variable "resource_group_name" {
-  type        = string
-  description = "Name of RG"
+  type = string
+  description = "Name of Resource Grpoup Deployed"
 }
 
 variable "location" {
-  type        = string
+  type = string
   description = "The location of Resource deployed"
 }
