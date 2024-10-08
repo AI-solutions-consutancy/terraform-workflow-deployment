@@ -49,7 +49,7 @@ jobs:
         run: |
           terraform plan  -input=false
           working-directory: ./terraform/modules
-          # terraform-variables-path: variables/dev.tfvars
+          terraform-variables-path: variables/dev.tfvars
 
       # - name: Terraform Apply
       #   run: terraform apply -auto-approve  -input=false
