@@ -22,3 +22,13 @@ variable "container_name" {
   type = string
   default = "country"
 }
+
+variable "virtual_network_name" {
+  type = string
+  default = "vnet1"
+}
+
+variable "vnet_address_space" {
+  default = [
+    "10.0.0.0/16" ]
+}
