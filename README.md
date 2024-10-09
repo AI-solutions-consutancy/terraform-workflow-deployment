@@ -14,3 +14,4 @@
 ### [terraform-sp] (https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs/guides/service_principal_client_secret)
 ### [terraform steps] (https://github.com/hashicorp/terraform-github-actions/blob/master/examples/credentials-file.md)
 ### [custom-modules] (https://www.youtube.com/watch?v=o9KD7lLrQvg)
+### [private-endpoint-module] (https://github.com/andrewCluey/terraform-azurerm-private-endpoint/blob/master/examples/blob_endpoint/main.tf)
