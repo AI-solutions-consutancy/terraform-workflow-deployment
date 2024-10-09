@@ -15,3 +15,5 @@ resource "azurerm_storage_container" "stg_container" {
   container_access_type = "private"
    
 }  
+
+
