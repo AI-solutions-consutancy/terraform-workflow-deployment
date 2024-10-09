@@ -20,7 +20,7 @@ variable "storage_account_replication_type" {
 
 variable "container_name" {
   type = string
-  default = "country"
+  default = "test"
 }
 
 variable "virtual_network_name" {
@@ -33,6 +33,8 @@ variable "vnet_address_space" {
     "10.0.0.0/16" ]
 }
 
+
 variable "address_prefixes" {
   default = ["10.0.1.0/24"]
 }
+
