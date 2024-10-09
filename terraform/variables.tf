@@ -45,3 +45,12 @@ variable "keyvault_name" {
 variable "keyvault_sku_name" {
   default = "standard"
 }
+
+variable "pendpoint_name" {
+  default = "privateendpoints"  
+}
+
+variable "privateserviceconnection_name" {
+  default = "test-connection"
+}
+
