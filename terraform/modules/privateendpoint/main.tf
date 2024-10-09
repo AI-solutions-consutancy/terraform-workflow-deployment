@@ -6,7 +6,7 @@ resource "azurerm_private_endpoint" "pendpoint" {
 
   private_service_connection {
     name                           = var.privateserviceconnection_name
-    private_connection_resource_id = var.private_connection_resource_id
+    private_connection_resource_id = var.connection_id
     is_manual_connection           = false
   }
 }

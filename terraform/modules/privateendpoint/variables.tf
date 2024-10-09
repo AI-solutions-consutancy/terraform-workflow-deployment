@@ -18,6 +18,6 @@ variable "privateserviceconnection_name" {
     type = string  
 }
 
-variable "private_connection_resource_id" {
+variable "connection_id" {
     type = string  
 }
