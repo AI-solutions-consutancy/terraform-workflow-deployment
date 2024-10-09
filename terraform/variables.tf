@@ -38,3 +38,10 @@ variable "address_prefixes" {
   default = ["10.0.1.0/24"]
 }
 
+variable "keyvault_name" {
+  default = "keyvaultsre23"
+}
+
+variable "keyvault_sku_name" {
+  default = "standard"
+}
