@@ -20,7 +20,7 @@ variable "storage_account_replication_type" {
 
 variable "container_name" {
   type = string
-  default = "container1"
+  default = "country"
 }
 
 variable "virtual_network_name" {
