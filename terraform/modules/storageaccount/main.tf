@@ -4,7 +4,7 @@ resource "azurerm_storage_account" "stg" {
   location                 = var.location
   account_tier             = var.storage_account_tier
   account_replication_type = var.storage_account_replication_type
-  public_network_access_enabled = false
+ # public_network_access_enabled = false
   
   identity {
     type         = var.managed_identity_type
