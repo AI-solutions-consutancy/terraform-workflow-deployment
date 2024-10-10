@@ -31,7 +31,7 @@ variable "inbound_rules" {
   default     = []
   description = "List of objects that represent the configuration of each inbound rule."
 }
-
+/*
 variable "outbound_rules" {
   type = list(object({
     name                                       = string
@@ -53,3 +53,4 @@ variable "outbound_rules" {
   default     = []
   description = "List of objects that represent the configuration of each outbound rule."
 }
+*/
