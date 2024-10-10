@@ -57,3 +57,7 @@ variable "privateserviceconnection_name" {
 variable "network_security_group_name" {
   default = "networsecuritygroup1"  
 }
+
+variable "route_table_name" {
+  default = "routetable1" 
+}
