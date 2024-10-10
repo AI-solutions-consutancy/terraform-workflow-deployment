@@ -10,6 +10,7 @@ module "storageaccount" {
   min_tls_version               = "TLS1_2"
   shared_access_key_enabled     = true
   public_network_access_enabled = true
+  large_file_share_enabled      = true
   
   tags = {
     env   = "Dev"
