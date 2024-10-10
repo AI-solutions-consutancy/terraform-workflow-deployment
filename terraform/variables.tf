@@ -54,3 +54,6 @@ variable "privateserviceconnection_name" {
   default = "test-connection"
 }
 
+variable "network_security_group_name" {
+  default = "networsecuritygroup1"  
+}
