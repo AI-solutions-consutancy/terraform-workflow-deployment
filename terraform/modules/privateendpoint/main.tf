@@ -5,7 +5,8 @@ resource "azurerm_private_endpoint" "pendpoint" {
   subnet_id           = var.subnet_id
 
   private_service_connection {
-    name                           = var.privateserviceconnection_name
+    name                           = "test-connection"
+    private_connection_resource_alias = var.connection_alias
     is_manual_connection           = false
   }
 }
