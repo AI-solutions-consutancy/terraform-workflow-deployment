@@ -13,7 +13,3 @@ variable "subnet_id" {
 variable "pendpoint_name" {
     type = string  
 }
-
-variable "connection_id" {
-    type = string  
-}
