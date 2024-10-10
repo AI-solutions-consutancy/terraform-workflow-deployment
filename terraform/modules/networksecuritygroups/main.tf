@@ -3,7 +3,7 @@ resource "azurerm_network_security_group" "nsg" {
   location            = var.location
   resource_group_name = var.resource_group_name
 }  
-
+/*
 resource "azurerm_network_security_rule" "inbounds" {
   for_each                                   = { for rule in var.inbound_rules : rule.name => rule }
   resource_group_name                        = var.resource_group_name
@@ -47,3 +47,4 @@ resource "azurerm_network_security_rule" "outbounds" {
   destination_port_ranges                    = each.value.destination_port_ranges
   description                                = each.value.description
 }
+*/
