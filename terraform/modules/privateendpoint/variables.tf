@@ -14,10 +14,6 @@ variable "pendpoint_name" {
     type = string  
 }
 
-variable "privateserviceconnection_name" {
-    type = string  
-}
-
 variable "connection_id" {
     type = string  
 }
