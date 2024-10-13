@@ -17,3 +17,13 @@ variable "address_prefixes" {
 variable "subnet_name" {
     type = string
 }
+
+variable "private_endpoint_network_policies" {
+    type = string  
+}
+
+variable "tags" {
+  type = map(string)
+  description = "List of tags to apply to resources"
+  default = {}
+}

@@ -1,59 +1,77 @@
-variable "resource_group_name" {
-  type    = string
-  default = "ai-uks-dev-rg001"
-}
-
 variable "location" {
   type    = string
   default = "uksouth"
 }
 
-variable "storage_account_tier" {
+variable "resource_group_name" {
   type    = string
-  default = "Standard"
+  default = "rg-ai-dev"
 }
 
-variable "storage_account_replication_type" {
-  type    = string
-  default = "GRS"
-}
-
-variable "container_name" {
-  type = string
-  default = "test"
-}
-
-variable "virtual_network_name" {
-  type = string
-  default = "vnet1"
-}
-
-variable "vnet_address_space" {
-  default = [
-    "10.0.0.0/16" ]
+variable "env" {
+  type        = string
+  description = "environments dev/sit/prod"
+  default     = "dev"
 }
 
 
-variable "address_prefixes" {
-  default = ["10.0.1.0/24"]
+variable "application_name" {
+  type        = string
+  description = "the name of application that is deployed"
+  default     = "ai"
 }
 
-variable "keyvault_name" {
-  default = "keyvaultsre23"
+variable "tags" {
+  type        = map(string)
+  description = "List of tags to apply to resources"
+  default = {
+    application = "ai"
+    environment = "dev"
+    level       = "5"
+    ai_platform = "Azure"
+  }
 }
 
-variable "keyvault_sku_name" {
-  default = "standard"
+variable "subnets" {
+  type        = map(list(string))
+  description = "Subnets to be deployed in Vnet"
+  default = {
+    "subnet1-ai-dev" = ["10.0.1.0/24"]
+    "subnet2-ai-dev" = ["10.0.2.0/24"]
+    "subnet3-ai-dev" = ["10.0.3.0/24"]
+    "subnet4-ai-dev" = ["10.0.4.0/24"]
+  }
 }
 
-variable "pendpoint_name" {
-  default = "privateendpoints"  
-}
 
-variable "network_security_group_name" {
-  default = "networsecuritygroup1"  
-}
+# variable "vnet_instances" {             # - Map of lists
+#   type = map(list(string))
+#   description = "List of vnet instances"
+#   default = {
+#     vnet4-ai-dev = ["10.0.0.0/16"]
+#     vnet6-ai-dev = ["10.0.0.0/24"]
+#   }
+# }
 
-variable "route_table_name" {
-  default = "routetable1" 
-}
+# variable "vnet_instances" {             # - Map of string = https://spacelift.io/blog/terraform-map-variable
+#   type = map(string)
+#   description = "List of vnet instances"
+#   default = {
+#     vnet4-ai-dev = "10.0.0.0/16"
+#     vnet6-ai-dev = "10.0.0.0/24"
+#   }
+# }
+
+# variable "vnet_instances" {                   # deployed with variable type = set(string)                   
+#   description = "Vnet INstances"
+#   type = set(string)
+#   default = [ "vnet1-ai-dev", "vnet3-ai-dev" ] 
+# }
+
+# variable "vnet_count" {                       ##COUNT META ARGUMENT EXAMPLE
+#   type = string
+#   description = "No of Virtual Networks"
+#   default = "2"
+# }
+
+

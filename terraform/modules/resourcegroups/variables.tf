@@ -5,3 +5,9 @@ variable "resource_group_name" {
 variable "location" {
   type = string
 }
+
+variable "tags" {
+  type = map(string)
+  description = "List of tags to apply to resources"
+  default = {}
+}
