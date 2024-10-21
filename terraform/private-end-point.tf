@@ -1,11 +1,12 @@
 
 # module "privateendpoint" {
-#     source = "./modules/privateendpoint"
+#   source = "./modules/privateendpoint"
 
-# pendpoint_name                   = var.pendpoint_name
-# resource_group_name              = var.resource_group_name
-# location                         = var.location
-# subnet_id                        = data.azurerm_subnet.pe_subnet.id
-# connection_alias                 = "/subscriptions/1433f151-b71e-4bff-b991-2f7dba179f6a/resourceGroups/ai-uks-dev-rg001/providers/Microsoft.Storage/storageAccounts/testfrdf565.azure.privatelinkservice"
+#   pendpoint_name      = "pendpoint-${var.application_name}-${var.env}"
+#   resource_group_name = var.resource_group_name
+#   location            = var.location
+#   subnet_id           = "/subscriptions/94ea13c7-4cec-4c76-8a90-1a7815cc0c51/resourceGroups/rg-ai-dev/providers/Microsoft.Network/virtualNetworks/vnet-ai-dev/subnets/subnet1-ai-dev"
+#   tags                = var.tags
 # }
 
+# NOT POSSIBLE TO CREATE A MODULE --JUST CONSUME THE CONFIG WHILST CREATING PRIVATE ENDPOINT

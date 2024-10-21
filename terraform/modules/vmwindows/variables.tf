@@ -1,3 +1,4 @@
+
 variable "resource_group_name" {
   type = string 
 }
@@ -6,11 +7,16 @@ variable "location" {
   type = string
 } 
 
+
 variable "subnet_id" {
-    type = string  
+    description = "Subnet to place the VM into"
 }
 
-variable "pendpoint_name" {
+variable "key_vault_id" {
+    description = "ID of the key vault to hold the VM admin password"
+}
+
+variable "vm_name" {
     type = string  
 }
 
@@ -19,10 +25,4 @@ variable "tags" {
   type = map(string)
   description = "List of tags to apply to resources"
   default = {}
-}
-
-variable "resource_id" {
-  description = "The ID of the resource that the new Private Endpoint will be assigned to."
-  type        = string
-  default     = null
 }

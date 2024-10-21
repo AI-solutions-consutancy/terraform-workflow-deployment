@@ -36,7 +36,7 @@ locals {
       source_address_prefix      = "*"
       destination_address_prefix = "192.168.2.0/24"
     }
-    
+
     https = {
       name                       = "https"
       priority                   = 301
