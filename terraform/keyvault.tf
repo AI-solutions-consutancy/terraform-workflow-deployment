@@ -1,3 +1,4 @@
+/*
 module "keyvault" {
   source              = "./modules/keyvault"
   keyvault_name       = "kvault1-${var.application_name}-${var.env}"
@@ -12,4 +13,4 @@ module "keyvault" {
     }
   ]
 }
-
+*/
